@@ -385,6 +385,10 @@ app.cacheBuster = null;
 		function dismissSearch(){
 			searchFields.addClass('hidden');
 			searchButton.removeClass('hidden');
+			setTimeout(function() {
+				$('#nav-dropdown .pagination-block').removeClass('hidden');
+			} , 250);
+
 		}
 
 		searchButton.on('click', function(e) {
